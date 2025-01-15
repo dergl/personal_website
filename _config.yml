@@ -1,5 +1,9 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
+title: Raphael Adalid Braun
+description: Welcome to my personal website.
 show_downloads: true
-google_analytics:
+google_analytics: # my Google Analytics tracking ID
 theme: jekyll-theme-cayman
+
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
