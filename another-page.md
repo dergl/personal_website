@@ -3,6 +3,22 @@ layout: default
 title: Another page
 description: This is just another page
 ---
+<head>
+    <!--
+    <style>
+    .btn {
+        padding: 10px 20px;
+        background-color: #157878;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .btn:hover {
+        background-color: #145454;
+    }
+    </style>
+    -->
+</head>
 
 ## Welcome to another page
 
@@ -18,7 +34,7 @@ _yay_
 ### Ein Dropdown-Menü
 
 <div class="dropdown">
-  <button class="dropbtn">Menü öffnen</button>
+  <button class="dropbtn" style>Menü öffnen</button>
   <div class="dropdown-content">
     <a href="#option1">Option 1</a>
     <a href="#option2">Option 2</a>
