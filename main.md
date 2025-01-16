@@ -5,7 +5,7 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
-[Link to Code of Conduct](./CODE_OF_CONDUCT.html).
+[Link to Code of Conduct](./docs/CODE_OF_CONDUCT.html).
 
 There should be whitespace between paragraphs.
 
