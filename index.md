@@ -1,3 +1,6 @@
+<!--- COMMENT START
+%% This is to reroute to main.html instead of using index.html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +11,8 @@
 </body>
 </html>
 
+COMMENT END-->
 
-<!--- COMMENT START
 
 ---
 layout: default
@@ -137,4 +140,3 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 The final element.
 ```
 
-COMMENT END-->
