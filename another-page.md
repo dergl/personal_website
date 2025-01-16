@@ -12,7 +12,8 @@ _yay_
 
 ### Ein einfacher Button
 
-<a href="https://example.com" class="btn">Klicke mich</a>
+<a href="https://example.com" class="btn" style="padding: 10px 20px; background-color: #157878; color: white; text-decoration: none; border-radius: 5px;">Klicke mich</a>
+
 
 ### Ein Dropdown-Menü
 
