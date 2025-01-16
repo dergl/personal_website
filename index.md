@@ -1,6 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="0; URL='main.html'">
+</head>
+<body>
+    <p>Sie werden weitergeleitet nach <a href="main.html">main.html</a>.</p>
+</body>
+</html>
+
+
+<!--- COMMENT START
+
 ---
 layout: default
 ---
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
@@ -122,3 +136,5 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+COMMENT END-->
