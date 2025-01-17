@@ -1,4 +1,8 @@
-
+---
+layout: default
+title: Test File
+---
+<!-- The above block is necessary for local testing. To convert the .md file into .html -->
 # How to test website locally!
 
 Open the terminal and navigate to the corresponding directory. Type in the command

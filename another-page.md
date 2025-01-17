@@ -32,7 +32,7 @@ _yay_
 
 
 ### Ein Dropdown-Menü mit css?
-<style>
+<!--<style>
 /* Dropdown-Container */
 .dropdown {
   position: relative;
@@ -83,7 +83,7 @@ _yay_
 .dropdown:hover .dropbtn {
   background-color: #145454;
 }
-</style>
+</style>-->
 
 <div class="dropdown">
   <button class="dropbtn" style>Menü öffnen</button>
