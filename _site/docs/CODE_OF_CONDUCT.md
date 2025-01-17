@@ -1,14 +1,3 @@
-
-# How to test website locally!
-
-Open the terminal and navigate to the corresponding directory. Type in the command
-
-```js
-bundle exec jekyll serve
-```
-
-then open `http://localhost:4000` in the browser.
-
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
