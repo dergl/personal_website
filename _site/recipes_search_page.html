@@ -101,59 +101,41 @@
 <main>
   <h1 id="recipe-page">Recipe Page</h1>
 
-<div class="filters-container">
-  <h3>Filter by Category</h3>
-  <p><label>
-    <input type="checkbox" class="filter-checkbox" value="indian" onchange="applyFilters()" /> Indian
-  </label>
-  <label>
-    <input type="checkbox" class="filter-checkbox" value="asian" onchange="applyFilters()" /> Asian
-  </label>
-  <label>
-    <input type="checkbox" class="filter-checkbox" value="italian" onchange="applyFilters()" /> Italian
-  </label>
-  <label>
-    <input type="checkbox" class="filter-checkbox" value="mexican" onchange="applyFilters()" /> Mexican
-  </label></p>
-</div>
-<!-- <script>
-  function print_recipes() {
-    for (let i = 0; i < recipes.length; i++) {
-      console.log(i);
-      console.log(recipes[i]);
-    }
-  }
-</script> -->
-<div class="filters-container">
-  <h3>Filter by Category</h3>
-  <p><label>
-    <input type="checkbox" class="filter-checkbox" value="indian" onchange="print_recipes()" /> Indian
-  </label></p>
-</div>
-
-<div class="recipe-container">
-
-</div>
-
 <!-- <div class="filters-container">
-  <h3>Print recipes</h3>
+  <h3>Filter by Category</h3>
   <label>
-    <input class="btn"  onchange="print_recipes()">
+    <input type="checkbox" class="filter-checkbox" value="indian" onchange="applyFilters()"> Indian
+  </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="asian" onchange="applyFilters()"> Asian
+  </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="italian" onchange="applyFilters()"> Italian
+  </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="mexican" onchange="applyFilters()"> Mexican
   </label>
 </div> -->
 
-<script>
-  // Check if recipes exist within the DOM -> they are not, the console return is 'null'
-  console.log(document.querySelector('.recipe-card')); 
-</script>
+<div class="filters-container">
+  <h3>Filter by Category</h3>
+  <p><label>
+    <input type="checkbox" class="filter-checkbox" value="asian" onchange="filterRecipes()" /> Indian
+  </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="italian" onchange="filterRecipes()" /> Italian
+  </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="mexican" onchange="filterRecipes()" /> Mexican
+  </label></p>
+</div>
 
-<p>No recipes available.</p>
+<h1 id="test-container-for-links">Test container for links</h1>
 
-<p>No recipes available.</p>
-
-<p>No recipes available.</p>
-
-<p>0 recipes available.</p>
+<div id="recipe-links-container">
+  <h3>Recipe Links</h3>
+  <div id="recipe-links"></div>
+</div>
 
 
 </main>

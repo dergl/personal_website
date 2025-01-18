@@ -23,3 +23,20 @@
     text-align: center;
   }
   
+  #recipe-links-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  #recipe-links a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #recipe-links a:hover {
+    text-decoration: underline;
+  }
