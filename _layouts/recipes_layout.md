@@ -58,7 +58,7 @@ layout: default
 
 
 <script type="module">
-  import { recipes } from './assets/js/recipes_list.js';
+  import { recipes } from '/assets/js/recipes_list.js';
   
   // Ensure the function is scoped properly
   document.addEventListener('DOMContentLoaded', () => {
@@ -87,7 +87,7 @@ layout: default
 </script>
 
 {% if page.js %}
-<script src="/assets/js/{{ page.js }}"></script>
+<script src="{{ '/assets/js/' | relative_url }}{{ page.js }}"></script>
 {% endif %}
 
 <header>

@@ -140,7 +140,7 @@
 
 
 <script type="module">
-  import { recipes } from './assets/js/recipes_list.js';
+  import { recipes } from '/assets/js/recipes_list.js';
   
   // Ensure the function is scoped properly
   document.addEventListener('DOMContentLoaded', () => {
@@ -200,6 +200,47 @@
 <main>
   <!-- Ensure proper path -->
 <!-- <script src="/assets/js/recipes.js"></script>   -->
+
+<!-- Ensure recipes are accessible in this page -->
+<!-- <script>
+  const recipes = [];  // Pass recipes to the page
+  console.log(recipes);
+</script> -->
+
+<!-- <script type="module">
+  import { recipes } from '/../assets/js/recipes_list.js';
+  
+  // Ensure the function is scoped properly
+  document.addEventListener('DOMContentLoaded', () => {
+    function showSuggestions(query) {
+      const suggestionsList = document.getElementById('suggestions');
+      suggestionsList.innerHTML = ''; // Clear previous suggestions
+
+      if (query.length === 0) return;
+
+      const suggestions = recipes.filter(recipe => recipe.name.toLowerCase().includes(query.toLowerCase()));
+
+      suggestions.forEach(suggestion => {
+        const li = document.createElement('li');
+        li.textContent = suggestion.name;
+        li.onclick = () => {
+          window.location.href = suggestion.url;  // Redirect to recipe page
+        };
+        suggestionsList.appendChild(li);
+      });
+    }
+
+    document.getElementById('search-bar').addEventListener('input', (event) => {
+      showSuggestions(event.target.value);
+    });
+  });
+</script>
+
+
+<script src="/assets/js/filters.js"></script>
+ -->
+
+<h1 id="sushi">Sushi</h1>
 
 <!-- # Sushi Recipe -->
 
