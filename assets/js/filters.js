@@ -1,60 +1,68 @@
-console.log("filters.js loaded successfully");
-
-// const recipes = {{ site.recipes | jsonify }};
-const recipes = [
-    { name: "Chicken Curry", url: "/recipes/chicken-curry", category:"indian" },
-    { name: "Paneer Tikka", url: "/recipes/paneer-tikka" ,category: ["indian", "vegetarian"]},
-    { name: "Sushi", url: "/recipes/sushi", category:"asian" },
-    { name: "Pad Thai", url: "/recipes/pad-thai" , category:"asian"},
-    { name: "Spaghetti Bolognese", url: "/recipes/spaghetti-bolognese" ,category: "italian"},
-    { name: "Tacos", url: "/recipes/tacos" ,category: "mexican"}
-  ];
-// const recipes = {{ site.recipes | jsonify }};
-
-
-
-
-// function applyFilters() {
-//     const checkboxes = document.querySelectorAll(".filter-checkbox");
-//     const selectedCategories = Array.from(checkboxes)
-//       .filter(checkbox => checkbox.checked)
-//       .map(checkbox => checkbox.value);
-  
-//     const recipeCards = document.querySelectorAll(".recipe-card");
-  
-//     // Show all recipes by default if no checkbox is selected
-//     if (selectedCategories.length === 0) {
-//       recipeCards.forEach(recipe => recipe.style.display = "block");
-//       return;
-//     }
-  
-//     // Filter recipes by selected categories
-//     recipeCards.forEach(recipe => {
-//       const recipeCategory = recipe.dataset.category;
-//       recipe.style.display = selectedCategories.includes(recipeCategory) ? "block" : "none";
-//     });
-//   }
+import { recipes } from "./recipes_list.js";
+// const recipes = [
+//     { 
+//         name: "Chicken Curry", 
+//         url: "/recipes/chicken-curry", 
+//         category:"indian" 
+//     },
+//     { 
+//         name: "Paneer Tikka", 
+//         url: "/recipes/paneer-tikka" ,
+//         category: ["indian", "vegetarian", "main-dish"]
+//     },
+//     { 
+//         name: "Sushi", 
+//         url: "/recipes/sushi", 
+//         category:"asian" 
+//     },
+//     { 
+//         name: "Pad Thai", 
+//         url: "/recipes/pad-thai" , 
+//         category:"asian"
+//     },
+//     { 
+//         name: "Spaghetti Bolognese", 
+//         url: "/recipes/spaghetti-bolognese" ,
+//         category: "italian"
+//     },
+//     { 
+//         name: "Tacos", 
+//         url: "/recipes/tacos" ,
+//         category: "mexican"}
+//     ];
 
 function filterRecipes() {
-    // Get all checkboxes
-    const checkboxes = document.querySelectorAll('.filter-checkbox');
-  
-    // Get selected categories
-    const selectedCategories = Array.from(checkboxes)
-      .filter(checkbox => checkbox.checked) // Keep only checked boxes
-      .map(checkbox => checkbox.value);    // Extract their values
-  
-    // Filter recipes
-    const filteredRecipes = selectedCategories.length === 0
-      ? recipes // If no category is selected, show all recipes
-      : recipes.filter(recipe => {
-          // Check if all selected categories exist in the recipe's category list
-          return selectedCategories.every(category => recipe.category.includes(category));
-      });
-  
-    // Display filtered recipes
-    displayRecipeLinks(filteredRecipes);
+    const checkboxes = document.querySelectorAll(".filter-checkbox:checked");
+    const activeFilters = Array.from(checkboxes).map(cb => cb.value);
+
+    const filteredRecipes = recipes.filter(recipe =>
+        activeFilters.every(filter => 
+            Array.isArray(recipe.category) 
+                ? recipe.category.includes(filter) 
+                : recipe.category === filter
+        )
+    );
+
+    const linksContainer = document.getElementById("recipe-links");
+    
+    if (filteredRecipes.length > 0) {
+        // If there are matching recipes, display them as links
+        linksContainer.innerHTML = filteredRecipes.map(recipe =>
+            `<a href="${recipe.url}">${recipe.name}</a>`
+        ).join("<br>");
+    } else {
+        // If no recipes match, display the "No recipes" message
+        linksContainer.innerHTML = "<p>No recipe matches your criteria.</p>";
+    }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    filterRecipes(); // Initial render
+    const checkboxes = document.querySelectorAll(".filter-checkbox");
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", filterRecipes);
+    });
+});
 
   
   function displayRecipeLinks(filteredRecipes) {
