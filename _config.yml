@@ -10,4 +10,16 @@ plugins:
 
 permalink: none
 
+# include Markdown processing (.md to .html content)
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+  auto_ids: true
+  parse_block_html: true
+  parse_span_html: true
+
+
+
 CV_pdf_file_path: "/files/CV_adalid_braun.pdf"

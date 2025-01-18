@@ -738,6 +738,7 @@ a:hover {
 
 .dropdown .btn, .dropdown button {
   margin-left: 1em;
+  margin-right: 1em;
 }
 
 .dropdown {
