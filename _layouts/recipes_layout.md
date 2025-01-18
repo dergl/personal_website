@@ -7,8 +7,10 @@ layout: default
 {% endif %}
 
 <header>
-  <h1>{{ page.title }}</h1>
+  <h1 style="text-align: center; font-size: 48px; font-weight: bold;">Recipes</h1>
 </header>
+
+
 
 <div class="search-container">
   <input type="text" id="search-bar" placeholder="Search recipes..." oninput="showSuggestions(this.value)">

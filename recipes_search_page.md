@@ -1,6 +1,6 @@
 ---
 layout: recipes_layout
-title: Recipes
+title: Raphael Adalid Braun
 css: filters.css
 js: filters.js
 ---
@@ -26,7 +26,7 @@ js: filters.js
 <div class="filters-container">
   <h3>Filter by Category</h3>
   <label>
-    <input type="checkbox" class="filter-checkbox" value="asian" onchange="filterRecipes()"> Indian
+    <input type="checkbox" class="filter-checkbox" value="indian" onchange="filterRecipes()"> Indian
   </label>
   <label>
     <input type="checkbox" class="filter-checkbox" value="italian" onchange="filterRecipes()"> Italian
@@ -34,7 +34,21 @@ js: filters.js
   <label>
     <input type="checkbox" class="filter-checkbox" value="mexican" onchange="filterRecipes()"> Mexican
   </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="asian" onchange="filterRecipes()"> Asian
+  </label>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="vegetarian" onchange="filterRecipes()"> Vegetarian
+  </label>
 </div>
+
+<!-- ## other filters
+<div class="filters-container">
+  <h3>Filter by Category</h3>
+  <label>
+    <input type="checkbox" class="filter-checkbox" value="vegetarian" onchange="filterRecipes()"> Vegetarian
+  </label>
+</div> -->
 
 # Test container for links
 
