@@ -1,61 +1,6 @@
 ---
 layout: default
 ---
-<!-- <script>
-  // Import recipes from a JavaScript file
-  {% assign recipes = site.recipes | jsonify %}
-  console.log(recipes);
-//   const recipes = [
-//     { 
-//         name: "Chicken Curry", 
-//         url: "/recipes/chicken-curry", 
-//         category:"indian" 
-//     },
-//     { 
-//         name: "Paneer Tikka", 
-//         url: "/recipes/paneer-tikka" ,
-//         category: ["indian", "vegetarian", "main-dish"]
-//     },
-//     { 
-//         name: "Sushi", 
-//         url: "/recipes/sushi", 
-//         category:"asian" 
-//     },
-//     { 
-//         name: "Pad Thai", 
-//         url: "/recipes/pad-thai" , 
-//         category:"asian"
-//     },
-//     { 
-//         name: "Spaghetti Bolognese", 
-//         url: "/recipes/spaghetti-bolognese" ,
-//         category: "italian"
-//     },
-//     { 
-//         name: "Tacos", 
-//         url: "/recipes/tacos" ,
-//         category: "mexican"}
-//     ];
-
-  function showSuggestions(query) {
-    const suggestionsList = document.getElementById('suggestions');
-    suggestionsList.innerHTML = ''; // Clear previous suggestions
-
-    if (query.length === 0) return;
-
-    const suggestions = recipes.filter(recipe => recipe.name.toLowerCase().includes(query.toLowerCase()));
-
-    suggestions.forEach(suggestion => {
-      const li = document.createElement('li');
-      li.textContent = suggestion.name;
-      li.onclick = () => {
-        window.location.href = suggestion.url;  // Redirect to recipe page
-      };
-      suggestionsList.appendChild(li);
-    });
-  }
-</script> -->
-
 
 <script type="module">
   import { recipes } from '/assets/js/recipes_list.js';
@@ -100,20 +45,6 @@ layout: default
 </div>
 
 
-
-
-<!-- {% if page.js %}
-<script src="/assets/js/{{ page.js }}"></script>
-{% endif %}
-
-<header>
-  <h1 style="text-align: center; font-size: 48px; font-weight: bold;">Recipes</h1>
-</header>
-
-<div class="search-container">
-  <input type="text" id="search-bar" placeholder="Search recipes..." oninput="showSuggestions(this.value)">
-  <ul id="suggestions" class="suggestions-list"></ul>
-</div> -->
 
 <main>
   {{ content }}

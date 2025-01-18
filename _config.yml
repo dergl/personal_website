@@ -20,10 +20,4 @@ kramdown:
   parse_block_html: true
   parse_span_html: true
 
-# collections:
-#   recipes:
-#     output: true
-#     path: recipes
-
-
 CV_pdf_file_path: "/files/CV_adalid_braun.pdf"

@@ -56,21 +56,12 @@
       
       
         <a href="/index.html" class ="btn">Home</a>
-        <!-- <a href="/index.html" class ="btn">Home</a>
-        <a href="/index.html" class ="btn">Home</a>
-        <a href="/index.html" class ="btn">Home</a> -->
-        <!-- <a href="/index.html" class ="btn">Home</a>
-        <a href="/index.html" class ="btn">Home</a>
-        <a href="/index.html" class ="btn">Home</a>
-        <a href="/index.html" class ="btn">Home</a> -->
         <a href="" class="btn">Download .zip</a>
         <a href="/files/CV_adalid_braun.pdf" class="btn" target="_blank" rel="noopener noreferrer"> View CV</a>
         <a href="/files/CV_adalid_braun.pdf" class="btn" download="CV_Adalid_Braun.pdf"> Download CV</a>
         <a href="/files/test_file.html" class="btn">test site</a>
         <div class="dropdown">
-          <!--   <button class="dropbtn" style>Menü öffnen</button>   -->
           <button class="btn">Options</button>
-          <!-- <a href="/files/test_file.html" class="dropbtn">test site</a> -->
           <div class="dropdown-content">
             <a href="#option1" class="dropdown-item">Option 1</a>
             <a href="#option2" class="dropdown-item">Option 2</a>
@@ -78,68 +69,11 @@
           </div>
         </div>
         <a href="/recipes_search_page.html" class ="btn">Recipes</a>
-        <!-- <a href="" class="btn">Download .tar.gz</a> -->
       
     </header>
 
     <main id="content" class="main-content" role="main">
-      <!-- <script>
-  // Import recipes from a JavaScript file
-  
-  console.log(recipes);
-//   const recipes = [
-//     { 
-//         name: "Chicken Curry", 
-//         url: "/recipes/chicken-curry", 
-//         category:"indian" 
-//     },
-//     { 
-//         name: "Paneer Tikka", 
-//         url: "/recipes/paneer-tikka" ,
-//         category: ["indian", "vegetarian", "main-dish"]
-//     },
-//     { 
-//         name: "Sushi", 
-//         url: "/recipes/sushi", 
-//         category:"asian" 
-//     },
-//     { 
-//         name: "Pad Thai", 
-//         url: "/recipes/pad-thai" , 
-//         category:"asian"
-//     },
-//     { 
-//         name: "Spaghetti Bolognese", 
-//         url: "/recipes/spaghetti-bolognese" ,
-//         category: "italian"
-//     },
-//     { 
-//         name: "Tacos", 
-//         url: "/recipes/tacos" ,
-//         category: "mexican"}
-//     ];
-
-  function showSuggestions(query) {
-    const suggestionsList = document.getElementById('suggestions');
-    suggestionsList.innerHTML = ''; // Clear previous suggestions
-
-    if (query.length === 0) return;
-
-    const suggestions = recipes.filter(recipe => recipe.name.toLowerCase().includes(query.toLowerCase()));
-
-    suggestions.forEach(suggestion => {
-      const li = document.createElement('li');
-      li.textContent = suggestion.name;
-      li.onclick = () => {
-        window.location.href = suggestion.url;  // Redirect to recipe page
-      };
-      suggestionsList.appendChild(li);
-    });
-  }
-</script> -->
-
-
-<script type="module">
+      <script type="module">
   import { recipes } from '/assets/js/recipes_list.js';
   
   // Ensure the function is scoped properly
@@ -180,18 +114,6 @@
 </div>
 
 
-
-
-<!-- 
-
-<header>
-  <h1 style="text-align: center; font-size: 48px; font-weight: bold;">Recipes</h1>
-</header>
-
-<div class="search-container">
-  <input type="text" id="search-bar" placeholder="Search recipes..." oninput="showSuggestions(this.value)">
-  <ul id="suggestions" class="suggestions-list"></ul>
-</div> -->
 
 <main>
   <!-- <script type="module" src="recipes_list.js"></script> -->

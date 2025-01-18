@@ -3,22 +3,7 @@ layout: default
 title: Another page
 description: This is just another page
 ---
-<head>
-    <!--
-    <style>
-    .btn {
-        padding: 10px 20px;
-        background-color: #157878;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    .btn:hover {
-        background-color: #145454;
-    }
-    </style>
-    -->
-</head>
+
 
 ## Welcome to another page
 
@@ -32,58 +17,6 @@ _yay_
 
 
 ### Ein Dropdown-Menü mit css?
-<!--<style>
-/* Dropdown-Container */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Button für Dropdown */
-.dropbtn {
-  background-color: #157878;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Dropdown-Inhalt */
-.dropdown-content {
-  display: none; /* Versteckt die Optionen standardmäßig */
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-}
-
-/* Links im Dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Hover-Effekt für Links */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Zeige Dropdown-Inhalt bei Hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Ändere Button-Farbe bei Hover */
-.dropdown:hover .dropbtn {
-  background-color: #145454;
-}
-</style>-->
 
 <div class="dropdown">
   <button class="dropbtn" style>Menü öffnen</button>

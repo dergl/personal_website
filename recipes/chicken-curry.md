@@ -6,11 +6,7 @@ js: filters.js  # Ensure the correct path to your JS file
 category: indian  # Example of adding category
 excerpt: "A delicious Indian curry with flavorful spices."
 url: "/recipes/chicken-curry"
-# css: recipes.css
-# js: recipes.js  # Ensure the correct path to your JS file
 ---
-<!-- Ensure proper path -->
-<!-- <script src="{{ '/assets/js/recipes.js' | relative_url }}"></script>   -->
 
 
 
